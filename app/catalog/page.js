@@ -2,7 +2,10 @@ import styles from './catalog.module.css';
 import products from './products.json';
 import ProductDetails from './ProductDetails';
 
-export default function Catalog() {
+export default async function Catalog() {
+
+	//Simulating a slow page
+	await new Promise((resolve) => setTimeout(resolve, 3000));
 
 	return (
 		<div>

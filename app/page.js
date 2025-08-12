@@ -10,7 +10,8 @@ asTheSunSpeaks
 
 import soundwaves from '../public/images/soundwaves.jpg';
 
-export default function Home() {
+export default async function Home() {
+	await new Promise((resolve) => setTimeout(resolve, 1000));
   return (
 	  <>
 		  <div className={styles.heroImage}>

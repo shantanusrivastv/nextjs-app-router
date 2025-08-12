@@ -5,7 +5,7 @@ import ProductDetails from './ProductDetails';
 export default async function Catalog() {
 
 	//Simulating a slow page
-	await new Promise((resolve) => setTimeout(resolve, 3000));
+	await new Promise((resolve) => setTimeout(resolve, 1500));
 
 	return (
 		<div>

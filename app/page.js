@@ -12,6 +12,9 @@ import soundwaves from '../public/images/soundwaves.jpg';
 
 export default async function Home() {
 	await new Promise((resolve) => setTimeout(resolve, 1000));
+
+	//throw new Error("This is test");
+ 
   return (
 	  <>
 		  <div className={styles.heroImage}>

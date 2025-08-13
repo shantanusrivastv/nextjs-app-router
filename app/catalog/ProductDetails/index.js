@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import styles from './productDetails.module.css';
 import Link from 'next/link';
+import BuyButton from './buyButton';
 
 export default function ProductDetails({ product }) {
 	return (<div className={styles.product}>
@@ -15,5 +16,6 @@ export default function ProductDetails({ product }) {
 			<div>{product.title}</div>
 			<div>{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(product.price)}</div>
 		</Link>
+		<BuyButton product={product}></BuyButton>
 	</div>);
 }

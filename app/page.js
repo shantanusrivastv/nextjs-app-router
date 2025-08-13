@@ -11,7 +11,7 @@ asTheSunSpeaks
 import soundwaves from '../public/images/soundwaves.jpg';
 
 export default async function Home() {
-	await new Promise((resolve) => setTimeout(resolve, 1000));
+	await new Promise((resolve) => setTimeout(resolve, 50));
 
 	//throw new Error("This is test");
  

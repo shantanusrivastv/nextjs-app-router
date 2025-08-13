@@ -4,9 +4,11 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import ProductDetails from './ProductDetails';
 
+export const revalidate = 30;
+
 export default async function Catalog() {
 	//Simulating a slow page
-	await new Promise((resolve) => setTimeout(resolve, 500));
+	await new Promise((resolve) => setTimeout(resolve, 150));
 
 	const filePath = path.join(process.cwd(), 'app/catalog/products.json')
 	const fileContents = await fs.readFile(filePath, 'utf8')
